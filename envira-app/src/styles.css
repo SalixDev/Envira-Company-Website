@@ -1,16 +1,20 @@
 @font-face {
     font-family: wichita-reg;
-    src: url(fonts/wichita-serial-regular_0.ttf);
+    src: url(./fonts/wichita-serial-reg.ttf);
 }
 @font-face {
     font-family: wichita-bold;
-    src: url(fonts/Wichita-Serial-Regular.ttf);
+    src: url(./fonts/wichita-serial-bold.ttf);
 }
 
 *{
     margin:0;
     padding: 0;
     font-family: wichita-reg
+}
+
+:root { /* colors */
+    --envira-green:  #1fda76;
 }
 
 button{ /* universal button*/
@@ -30,7 +34,7 @@ button{ /* universal button*/
     background-size: 1700px;
     width: 100vw;
     height: auto;
-    background-image: url(/Images/bambooForestWoman.jpg);
+    background-image: url(./images/bambooForestWoman.jpg);
     background-position:50% 25%;
     background-repeat: no-repeat;
 }
@@ -42,7 +46,7 @@ button{ /* universal button*/
 }
 }
 .bac-img2-lines{
-    background-image: url(/Images/lines2.png);
+    background-image: url(./images/lines.png);
     width: 100vw;
     height: auto;
     background-repeat: repeat-x;
@@ -58,9 +62,9 @@ button{ /* universal button*/
     display:flex;
     align-items:center;
     justify-content: space-between;
-    margin: 0vw 7vw;
-    padding-top: 2.5vw;
-    padding-bottom: 2vw;
+    margin: 0vw 6vw;
+    padding-top: 4vw;
+    padding-bottom: 4vw;
     gap: 3vw;
 }
 .logo-container{
@@ -120,14 +124,14 @@ button{ /* universal button*/
 .slogan{
     color: #f9faf8; 
     font-size:48px;
-    font-family: wichita-serial-bold;
+    font-family: wichita-bold;
     text-align: center;
 }
 .sub-slogan{
-    color: #1fda76;
+    color:  var(--envira-green);
     font-size:48px;
-    font-family: wichita-serial-bold;
-    margin-top: -1%; /*may have to change this to optimize for page zoom discrepancies*/
+    font-family: wichita-bold;
+    margin-top: -3%; /*may have to change this to optimize for page zoom discrepancies*/
 }
 .sub-text{
     width: 490px;
@@ -142,7 +146,7 @@ button{ /* universal button*/
         margin-top: 5vh;
     }
     .sub-slogan{
-        margin-top: -2%;
+        margin-top: -5%;
     }
     .sub-text{
         margin-top: 2%;
@@ -224,7 +228,7 @@ button{ /* universal button*/
     }
 }
 .feature-img-container{ /* green circle behind feature icon */
-    background-color:#1fda76;
+    background-color: var(--envira-green);
     border-radius: 50%;
     width: 90px;
     height: 90px;
@@ -277,7 +281,7 @@ button{ /* universal button*/
     padding: 4vh 0vw 7vh 0;
 }
 .quote-box{
-    background-color: #1fda76;
+    background-color:  var(--envira-green);
     height: auto;
     border-radius: 50%;
     padding: 5% 5% 4% 5%;
@@ -321,7 +325,7 @@ button{ /* universal button*/
     color: white;
 }
 .cta-container{
-    background-color:#1fda76;
+    background-color: var(--envira-green);
     flex: 1 1 auto;
     margin-left: 15vw;
     margin-right: 15vw;
