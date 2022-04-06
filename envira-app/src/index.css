@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "wichita-reg";
+    src: url("./fonts/wichita-serial-reg.ttf");
+    font-family: "wichita-bold";
+    src: url("./fonts/wichita-serial-bold.ttf");
+}
+
+@layer components {
+    .companies-logo{
+        @apply h-14 w-auto 
+        flex justify-center content-center
+        h-auto w-[300px] md:h-14 md:w-auto
+    }
+}

@@ -159,7 +159,7 @@ button{ /* universal button*/
     display: flex;
     align-items: center;
     justify-content: center;
-    background: whitesmoke;
+    background: #f5f5f5;
     position: relative;
     width: 100%;
     height: auto;

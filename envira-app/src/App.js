@@ -1,8 +1,8 @@
-import './App.css';
 import "./styles.css";
 import Truck from "./icons/truck.png";
 import Cash from "./icons/cash.png";
 import Clipboard from "./icons/clipboard.png";
+import Companies from "./html-components/companies.js"
 
 function App() {
   return (
@@ -81,6 +81,7 @@ function App() {
         </div>
       </div>
     </div>
+    <Companies />
     <div className="body-2-quote">
       <div className="quote-box">
         <p className="quote-text">

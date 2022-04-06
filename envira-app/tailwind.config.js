@@ -4,7 +4,12 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        wichitaReg:["wichita-reg"],
+        wichitaBold:["wichita-bold"]
+      },
+    },
   },
   plugins: [],
-}
+};
