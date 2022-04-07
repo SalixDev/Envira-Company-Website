@@ -10,9 +10,45 @@
 }
 
 @layer components {
+    .container{
+        @apply flex justify-center items-center
+    }
     .companies-logo{
-        @apply h-14 w-auto 
+        @apply 
         flex justify-center content-center
-        h-auto w-[300px] md:h-14 md:w-auto
+        w-[300px] h-auto md:h-auto md:w-auto
+    }
+    .TDriver{
+        @apply   bg-[url(./images/truckDriver.jpeg)]
+        relative h-[380px] md:h-[480px] w-auto
+        bg-cover
+    }
+    .Gradient{
+        @apply bg-black bg-opacity-30 bg-cover
+        w-[100vw] h-[100%]
+    }
+    .Tesla-img{
+        @apply   bg-[url(./images/tesla-industry.png)]
+    }
+    .CocaCola-img{
+        @apply   bg-[url(./images/coca-cola-industry.jpg)]
+    }
+    .ArticleImgSlant{
+        @apply bg-[#f5f5f5] h-[70px] w-64 mt-[-20px] absolute skew-y-6
+    }
+    .ArticleImg{
+        @apply h-96 bg-cover bg-[center_left_-125px]
+    }
+    .ArticleTag{
+        @apply text-blue-600 font-wichitaBold text-[13px] mt-[2px]
+    }
+    .ArticleHeadline{
+        @apply font-wichitaBold leading-none text-lg mt-1
+    }
+    .ArticleAuthor{
+        @apply text-gray-600 text-sm mt-1
+    }
+    .BlueButton{
+        @apply text-blue-600 border-blue-600 mt-4
     }
 }
