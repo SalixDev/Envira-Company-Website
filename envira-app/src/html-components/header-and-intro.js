@@ -9,11 +9,10 @@ const HeaderIntro = () => {
         <title>Document</title>
         <div className="bac-img1-woman">{/* first background img */}
           <div className="bac-img2-lines">
-            <div className="bac-overlay">      
               <div className="header-box"> {/* website header */}
                 <div className="logo-container">
                   <h3 className="logo">ENVIRA</h3>
-                  <p className="sub-logo">♻♻♻RECYCLING</p>
+                  <h3 className="sub-logo">♻ RECYCLING</h3>
                 </div>
                 <div className="header-links">
                   <p className="header-link1">Services</p>
@@ -29,12 +28,9 @@ const HeaderIntro = () => {
                   <p className="sub-text">
                     A family owned company working with businesses to achieve waste reduction and increased recycling while saving you money.
                   </p>
-                  <button className="button">
-                    About Us
-                  </button>
+                  <button className="button">About Us</button>
                 </div>
               </div>
-            </div>
           </div>
         </div>
         </div>

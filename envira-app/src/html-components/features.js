@@ -14,7 +14,6 @@ const Features = () => {
             </div>
             <div className="feature-text-container-align">
               <p className="feature-title">24 hour turnaround</p>
-              <br />
               <p className="feature-subtext">We provide a quick turnaround to get your waste dealt with safely in a way that works around you.</p>
             </div>
           </div>
@@ -38,7 +37,7 @@ const Features = () => {
             <div className="feature-text-container-align">
               <p className="feature-title">Trade in you waste for cash.</p>
               <p className="feature-subtext">Everyone loves cash, that's why WE pay YOU for your waste.</p>
-              <p className="fine-print">*Evaluation given upon booking</p>
+              <p className="fine-print">Evaluation given upon booking</p>
             </div>
           </div>
         </div>

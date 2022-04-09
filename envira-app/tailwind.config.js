@@ -6,8 +6,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        wichitaReg:["wichita-reg"],
-        wichitaBold:["wichita-bold"]
+        sfproReg:["sfpro-reg"],
+        sfproBold:["sfpro-bold"],
+        sfproMed:["sfpro-med"],
       },
     },
   },

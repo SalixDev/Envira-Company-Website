@@ -3,10 +3,12 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: "wichita-reg";
-    src: url("./fonts/wichita-serial-reg.ttf");
-    font-family: "wichita-bold";
-    src: url("./fonts/wichita-serial-bold.ttf");
+    font-family: "sfpro-reg";
+    src: url("./fonts/sf-pro/SFPRODISPLAYREGULAR.OTF");
+    font-family: "sfpro-bold";
+    src: url("./fonts/sf-pro/SFPRODISPLAYBOLD.OTF");
+    font-family: "sfpro-med";
+    src: url("./fonts/sf-pro/SFPRODISPLAYMEDIUM.OTF");
 }
 
 @layer components {
@@ -40,13 +42,13 @@
         @apply h-96 bg-cover bg-[center_left_-125px]
     }
     .ArticleTag{
-        @apply text-blue-600 font-wichitaBold text-[13px] mt-[2px]
+        @apply text-blue-600 font-sfproBold text-[13px] mt-[2px]
     }
     .ArticleHeadline{
-        @apply font-wichitaBold leading-none text-lg mt-1
+        @apply font-sfproBold leading-none text-lg mt-1
     }
     .ArticleAuthor{
-        @apply text-gray-600 text-sm mt-1
+        @apply text-gray-600 text-sm mt-0.5 font-sfproMed
     }
     .BlueButton{
         @apply text-blue-600 border-blue-600 mt-4

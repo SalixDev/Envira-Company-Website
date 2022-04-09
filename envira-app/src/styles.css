@@ -1,16 +1,19 @@
 @font-face {
-    font-family: wichita-reg;
-    src: url(./fonts/wichita-serial-reg.ttf);
+    font-family: sfpro-reg;
+    src: url(./fonts/sf-pro/SFPRODISPLAYREGULAR.OTF);
 }
 @font-face {
-    font-family: wichita-bold;
-    src: url(./fonts/wichita-serial-bold.ttf);
+    font-family: sfpro-bold;
+    src: url(./fonts/sf-pro/SFPRODISPLAYBOLD.OTF);
 }
-
+@font-face {
+    font-family: sfpro-med;
+    src: url(./fonts/sf-pro/SFPRODISPLAYMEDIUM.OTF);
+}
 *{
     margin:0;
     padding: 0;
-    font-family: wichita-reg
+    font-family: sfpro-reg
 }
 
 :root { /* colors */
@@ -22,7 +25,7 @@ button{ /* universal button*/
     background-color: transparent;
     color: #f9faf8;
     font-size: 18px;
-    font-family: wichita-bold;
+    font-family: sfpro-bold;
     width: 150px;
     height: 50px;
     cursor: pointer;
@@ -31,44 +34,39 @@ button{ /* universal button*/
 /* --- header --- */
 .bac-img1-woman{
     position: relative;
-    background-size: 1700px;
-    width: 100vw;
     height: auto;
     background-image: url(./images/bambooForestWoman.jpg);
     background-position:50% 25%;
     background-repeat: no-repeat;
+    background-size: cover;
+
 }
 @media only screen and (max-width:768px){
 .bac-img1-woman{
     background-size: 1400px;
-    width: 100vw;
-    height: auto;
+}
+.bac-img2-lines{
+    background-size: contain;
 }
 }
 .bac-img2-lines{
-    background-image: url(./images/lines.png);
-    width: 100vw;
-    height: auto;
-    background-repeat: repeat-x;
-    background-position:50% 0%;
-}
-.bac-overlay{
-    background-color: rgba(0,106,255,.5);
-    background: rgb(0,106,255);
-    background: linear-gradient(0deg, rgba(0, 102, 255, 0.4) 0%, rgba(0, 4, 58, 0.88) 70%);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0) -20%, rgba(0, 4, 58, .95) 80%), url(./images/lines.png);
+    background-position:50% -40%;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .header-box{
-    height:70px;
+    height:60px;
     display:flex;
     align-items:center;
     justify-content: space-between;
     margin: 0vw 6vw;
-    padding-top: 4vw;
+    padding-top: 2vw;
     padding-bottom: 4vw;
     gap: 3vw;
 }
 .logo-container{
-    padding-top: 30px;
+    padding-top: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -76,20 +74,21 @@ button{ /* universal button*/
     gap: 6px;
 }
 .logo{
-    font-family: wichita-bold;
-    font-size:40px;
+    font-family: sfpro-bold;
+    font-size:28px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #f9faf8; 
-    line-height: 0px;
+    line-height: 6px;
 }
 .sub-logo{
-    font-size: 18px;
+    font-family: sfpro-bold;
+    font-size: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
-    line-height: 0px;
+    color: #f9faf8;
 }
 .header-links{
     width: 270px;
@@ -98,7 +97,7 @@ button{ /* universal button*/
     align-items: center;
 }
 .header-box p{ /* header links 1, 2, 3 respectively*/
-    font-family: wichita-bold;
+    font-family: sfpro-bold;
     height:40px;
     flex:1 1 auto;
     font-size:18px;
@@ -106,6 +105,13 @@ button{ /* universal button*/
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.header-box button{
+    height: 35px;
+    width: 108px;
+    background-color: #e5e7eb;
+    color: black;
+    border-radius: 12px;
 }
 
 
@@ -124,13 +130,13 @@ button{ /* universal button*/
 .slogan{
     color: #f9faf8; 
     font-size:48px;
-    font-family: wichita-bold;
+    font-family: sfpro-bold;
     text-align: center;
 }
 .sub-slogan{
     color:  var(--envira-green);
     font-size:48px;
-    font-family: wichita-bold;
+    font-family: sfpro-bold;
     margin-top: -3%; /*may have to change this to optimize for page zoom discrepancies*/
 }
 .sub-text{
@@ -149,7 +155,7 @@ button{ /* universal button*/
         margin-top: -5%;
     }
     .sub-text{
-        margin-top: 2%;
+        margin-top: 0%;
         margin-bottom: 4%;
 }
     }
@@ -208,7 +214,7 @@ button{ /* universal button*/
     align-items: baseline;
 }
 .feature-text-container-align{ /* contains all feature text */
-    margin: 1vh 18% 5vh 18%; /* may need to change vh */
+    margin: 1vh 10% 2.5vh 10%; /* may need to change vh */
 }
 @media only screen and (max-width:768px){
     .all-cards-container{
@@ -217,14 +223,14 @@ button{ /* universal button*/
         justify-content: center;
         align-items: center;
         gap: 15px;
-        margin-top: -10vh;
+        margin-top: -12vh;
     }
     .feature-card-container{
         width: 350px;
         height: auto;
     }
     .feature-text-container-align{
-        margin: 1vh 10px 5vh 10px; /* may need to change vh */
+        margin: 1vh 10px 4vh 10px; /* may need to change vh */
 
     }
 }
@@ -258,20 +264,24 @@ button{ /* universal button*/
     height: auto;
 }
 .feature-title{
-    font-family: wichita-bold;
+    font-family: sfpro-bold;
+    font-size: large;
     text-align: center;
     font-weight: bold;
     color: black;
-    margin: 5%;
+    margin-top: 2%;
 }
 .feature-subtext{
+    margin-top: 1%;
     color: black;
     height: auto;
     text-align: center;
 }
 .fine-print{
+    margin-top: 2%;
     color: rgb(75, 75, 75);
     text-align: center;
+    font-size: small;
 }
 
 /* --- body 2; quote --- */
@@ -291,7 +301,7 @@ button{ /* universal button*/
 }
 .quote-text{
     text-align: center;
-    font-family: wichita-bold;
+    font-family: sfpro-bold;
     font-style:italic;
     font-size: 26px;
     color: #1f2937;
@@ -347,13 +357,13 @@ button{ /* universal button*/
 .cta-header{
     flex: 1;
     font-size: 28px;
-    font-family: wichita-bold;
+    font-family: sfpro-bold;
 }
 .cta-subtext{
     flex: 1;
     font-size: 17px;
     color: #1F2937;
-    font-family: wichita-bold;
+    font-family: sfpro-bold;
 }
 .body-3 button{
     border: solid white 2px;
