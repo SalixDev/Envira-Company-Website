@@ -18,51 +18,54 @@
 
 :root { /* colors */
     --envira-green:  #1fda76;
+    --envira-orange: #da4f1f;
+    --envira-dark-orange: #993716;
+    --envira-blue: #2649da;
+    --envira-dark-blue: #1a3399;
+    --whiteSmoke: #f5f5f5;
 }
 
 button{ /* universal button*/
-    border: solid white 2px;
     background-color: transparent;
-    color: #f9faf8;
-    font-size: 18px;
+    color: var(--whiteSmoke);
+    background-color: var(--envira-orange);
+    font-size: 1.3rem;
     font-family: sfpro-bold;
-    width: 150px;
-    height: 50px;
+    width: 8rem;
+    height: 2.8rem;
     cursor: pointer;
+    border-radius: 10px;
+    text-align: center;
 }
 
 /* --- header --- */
-.bac-img1-woman{
-    position: relative;
-    height: auto;
-    background-image: url(./images/bambooForestWoman.jpg);
-    background-position:50% 25%;
-    background-repeat: no-repeat;
-    background-size: cover;
-
+.header{
+ background-color: var(--whiteSmoke);
+ z-index: 1;
+ position: relative;
 }
-@media only screen and (max-width:768px){
-.bac-img1-woman{
-    background-size: 1400px;
-}
-.bac-img2-lines{
-    background-size: contain;
-}
-}
-.bac-img2-lines{
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0) -20%, rgba(0, 4, 58, .95) 80%), url(./images/lines.png);
-    background-position:50% -40%;
-    background-size: contain;
-    background-repeat: no-repeat;
+.header:after{ /* razor blade div effect */
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: inherit;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin: bottom right;
+    transform: skewY(-1.4deg);
 }
 .header-box{
-    height:60px;
+    height:40px;
     display:flex;
     align-items:center;
     justify-content: space-between;
     margin: 0vw 6vw;
     padding-top: 2vw;
-    padding-bottom: 4vw;
+    padding-bottom:2vw;
     gap: 3vw;
 }
 .logo-container{
@@ -79,7 +82,7 @@ button{ /* universal button*/
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #f9faf8; 
+    color: var(--envira-dark-orange); 
     line-height: 6px;
 }
 .sub-logo{
@@ -88,7 +91,7 @@ button{ /* universal button*/
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #f9faf8;
+    color: var(--envira-dark-orange);
 }
 .header-links{
     width: 270px;
@@ -101,71 +104,98 @@ button{ /* universal button*/
     height:40px;
     flex:1 1 auto;
     font-size:18px;
-    color: #e5e7eb;
+    color: rgb(69, 69, 69);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .header-box button{
-    height: 35px;
-    width: 108px;
-    background-color: #e5e7eb;
-    color: black;
-    border-radius: 12px;
+    height: 2.3rem;
+    width: 6.5rem;
+    font-size: 1rem;    
 }
 
 
-/* --- intro ---*/
-.intro{
+/* --- intro (hero) ---*/
+.hero{
+    background-color: var(--whiteSmoke);
+}
+.hero-inner{
+    background-image: linear-gradient(-4deg, rgb(243, 243, 243, .8) -40%, rgba(83, 83, 83, 0.95) 60%); 
+    background-color:rgb(104, 103, 103);
     display: flex;
     justify-content: center;
-}
-.intro-container{
-    display: flex;
     align-items: center;
+    height: 92vh;
+    margin: 0vh 3vw 0vh 3vw;
+    padding-top: 4vh;
+}
+.intro-text-container{
+    display: flex;
     justify-content: center;
     flex-direction: column;
-    margin: -1vh 30vw 25vh 30vw;
+    margin: -20vh 0vw 0vh 4vw;
 }
 .slogan{
-    color: #f9faf8; 
+    color: var(--whiteSmoke); 
     font-size:48px;
     font-family: sfpro-bold;
-    text-align: center;
+    line-height: 1;
 }
 .sub-slogan{
     color:  var(--envira-green);
     font-size:48px;
     font-family: sfpro-bold;
-    margin-top: -3%; /*may have to change this to optimize for page zoom discrepancies*/
+    margin-top: 0; /*may have to change this to optimize for page zoom discrepancies*/
+    line-height: 1;
 }
 .sub-text{
     width: 490px;
     font-size:18px;
-    color: #e5e7eb;
-    text-align: center;
-    margin-top: 4%;
-    margin-bottom: 9%;;
+    color: var(--whiteSmoke);
+    margin-top: 0%;
+    margin-bottom: 3%;
+}
+.bac-img1-woman{
+    background-image: url(./SVGs/credit-card.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height:100%;
+    margin: 15vh 4vw 0vh 0vw;
 }
 @media only screen and (max-width:768px){
-    .intro-container{
-        margin-top: 5vh;
+    .header-box{
+        height: 60px;
+    }
+    .hero-inner{
+        flex-direction: column;
+        height: 130vh;
+        justify-items: flex-start;
+        margin: 0;
+
+    }
+    .intro-text-container{
+        margin: 2vh 0vw 8vh 0vw;
     }
     .sub-slogan{
-        margin-top: -5%;
+        margin-top: 0%;
     }
     .sub-text{
         margin-top: 0%;
         margin-bottom: 4%;
-}
     }
+    .bac-img1-woman{
+        margin: 0vh 5vw 0vh 5vw;
+    }
+}
 
 /* --- body 1; features cards --- */
 .body-1-features{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #f5f5f5;
+    background: var(--whiteSmoke);
     position: relative;
     width: 100%;
     height: auto;
@@ -197,7 +227,7 @@ button{ /* universal button*/
     justify-content: center;
 }
 .feature-card-container{ /* individual card container, universally used */
-    background-color: whitesmoke;
+    background-color: var(--whiteSmoke);
     width: 200px;
     height: auto;
     flex: 1 1 auto;
@@ -284,107 +314,11 @@ button{ /* universal button*/
     font-size: small;
 }
 
-/* --- body 2; quote --- */
-.body-2-quote{
-    background-color: #e5e7eb;
-    align-items: center;
-    justify-content: center;
-    padding: 4vh 0vw 7vh 0;
-}
-.quote-box{
-    background-color:  var(--envira-green);
-    height: auto;
-    border-radius: 50%;
-    padding: 5% 5% 4% 5%;
-    margin-left: 20vw;
-    margin-right: 20vw;
-}
-.quote-text{
-    text-align: center;
-    font-family: sfpro-bold;
-    font-style:italic;
-    font-size: 26px;
-    color: #1f2937;
-}
-.quote-author{
-    background-color: #1F2937;
-    color: white;
-    border-radius: 50%;
-    padding: 4%;
-    float: right;
-    font-size: 20px;
-    margin-right: -4vw;
-}
-@media only screen and (max-width:768px){
-    .quote-box{
-        padding: 11vw;
-    }
-    .quote-author{
-        padding: 10%;
-        margin-right: -20vw;
-        margin-top: 4px;
-    }
-}
-
-/* --- body-3; call to action --- */
-.body-3{
-    height: 310px;
-    width: 100vw;
-    align-items: center;
-    justify-content: center;
-    display:flex;
-    color: white;
-}
-.cta-container{
-    background-color: var(--envira-green);
-    flex: 1 1 auto;
-    margin-left: 15vw;
-    margin-right: 15vw;
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content:space-evenly;
-    gap: 4vw;
-}
-.cta-left-container{
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    margin-left: 6vw;
-    margin-top: 3vw;
-    margin-bottom: 3vw;
-}
-.cta-header{
-    flex: 1;
-    font-size: 28px;
-    font-family: sfpro-bold;
-}
-.cta-subtext{
-    flex: 1;
-    font-size: 17px;
-    color: #1F2937;
-    font-family: sfpro-bold;
-}
-.body-3 button{
-    border: solid white 2px;
-    margin-right: 6vw;
-    margin-top: 3vw;
-    margin-bottom: 3vw;
-}
-@media only screen and (max-width:768px){
-    .cta-container{
-        margin-left: 2vw;
-        margin-right: 2vw;
-        margin-bottom: 3vh;
-        margin-top: 3vh;
-    }
-}
-
 /* --- footer --- */
 .footer-box{
-    height:90px;
+    height:70px;
     display:flex;
-    background:#1F2937;
+    background: black;
     align-items:center;
     justify-content: center;
     color: lightgrey;
