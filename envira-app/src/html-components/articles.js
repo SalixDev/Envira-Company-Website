@@ -1,8 +1,9 @@
+import Plant from "../SVGs/hand-plant.svg";
 
 const Articles = () => {
     return (
         <div className="bg-whiteSmoke h-[700px] flex justify-center gap-10">
-            <div className="ml-5">
+                <img src= {Plant} alt="plant theme" className="p-0 w-[18%] h-auto absolute top-[300vh] left-0"/>            <div className="ml-5">
                 <div className=" mt-10 w-64">
                     <div className="Tesla-img ArticleImg">
                         <div className="ArticleImgSlant"></div>

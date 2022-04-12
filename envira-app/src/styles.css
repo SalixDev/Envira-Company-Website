@@ -53,10 +53,10 @@ button{ /* universal button*/
     background: inherit;
     top: 0;
     right: 0;
-    bottom: 0;
     left: 0;
-    transform-origin: bottom right;
-    transform: skewY(-1.4deg);
+    bottom: 0;
+    transform-origin: bottom left;
+    transform: skewY(1.4deg);
 }
 .header-box{
     height:40px;
@@ -127,14 +127,14 @@ button{ /* universal button*/
     justify-content: center;
     align-items: center;
     height: 92vh;
-    margin: 0vh 3vw 0vh 3vw;
+    margin: 0vh 0vw 0vh 0vw;
     padding-top: 4vh;
 }
 .intro-text-container{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin: -20vh 0vw 0vh 4vw;
+    margin: -20vh 0vw 0vh 7vw;
 }
 .slogan{
     color: var(--whiteSmoke); 
@@ -162,7 +162,7 @@ button{ /* universal button*/
     background-size: contain;
     width: 100%;
     height:100%;
-    margin: 15vh 4vw 0vh 0vw;
+    margin: 15vh 7vw 0vh 0vw;
 }
 @media only screen and (max-width:768px){
     .header-box{
@@ -215,7 +215,7 @@ button{ /* universal button*/
     bottom: 0;
     left: 0;
     transform-origin: bottom right;
-    transform: skewY(4deg);
+    transform: skewY(3deg);
 }
 .all-cards-container{ /* container holds all cards */
     width: 80vw;
@@ -312,15 +312,4 @@ button{ /* universal button*/
     color: rgb(75, 75, 75);
     text-align: center;
     font-size: small;
-}
-
-/* --- footer --- */
-.footer-box{
-    height:70px;
-    display:flex;
-    background: black;
-    align-items:center;
-    justify-content: center;
-    color: lightgrey;
-    font-size: 18px;
 }

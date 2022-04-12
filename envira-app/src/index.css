@@ -75,4 +75,13 @@
         @apply text-white outline-none border-none
         bg-enviraGreen rounded-md
     }
+    /* footer box */
+    .footer-box{
+        @apply h-[70px] flex justify-center items-center
+        bg-black text-whiteSmoke text-lg
+    }
+    .footer-box img{
+        @apply h-9 w-9 m-1
+    }
 }
+

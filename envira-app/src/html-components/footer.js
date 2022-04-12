@@ -1,8 +1,10 @@
+import GreenIcon from "../SVGs/greenicon.svg";
 
 const Footer = () => {
     return (
         <div className="footer-box">
-        <p className="copyright"> Copyright © Kiwimoto 2021</p>
+          <img src={GreenIcon} alt="envira icon"/>
+        <p className="copyright"> Copyright © Kiwimoto 2022</p>
       </div>
     );
 };
