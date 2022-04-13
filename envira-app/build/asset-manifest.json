@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.df7853a8.css",
+    "main.js": "/static/js/main.6929b363.js",
+    "static/js/787.1b99915c.chunk.js": "/static/js/787.1b99915c.chunk.js",
+    "static/media/proterra-industry.png": "/static/media/proterra-industry.345846024275641df622.png",
+    "static/media/truckDriver.jpeg": "/static/media/truckDriver.4650589177619254e774.jpeg",
+    "static/media/SFPRODISPLAYMEDIUM.OTF": "/static/media/SFPRODISPLAYMEDIUM.b85d841dacb040b84951.OTF",
+    "static/media/SFPRODISPLAYBOLD.OTF": "/static/media/SFPRODISPLAYBOLD.b1f4d2c69fa808ebca12.OTF",
+    "static/media/SFPRODISPLAYREGULAR.OTF": "/static/media/SFPRODISPLAYREGULAR.d1f5e6e16dd4f75c3950.OTF",
+    "static/media/lacroix-industry.png": "/static/media/lacroix-industry.ef947562736cb34bf8d1.png",
+    "static/media/BASF.png": "/static/media/BASF.df87ea9137c6733654ac.png",
+    "static/media/Stormcloud.png": "/static/media/Stormcloud.e608af049837ff35a69d.png",
+    "static/media/Lacroix.png": "/static/media/Lacroix.413dca7d9106e2f4e155.png",
+    "static/media/Humbolt.png": "/static/media/Humbolt.a8aaede5c080b75002fe.png",
+    "static/media/hand-plant.svg": "/static/media/hand-plant.7a09cb7f2a78e4b51197977707ae4e51.svg",
+    "static/media/credit-card.svg": "/static/media/credit-card.7daa6c13ab769e3014f0.svg",
+    "static/media/enter.svg": "/static/media/enter.077ccd6d0f69afdd56a22788568729a6.svg",
+    "static/media/greenicon.svg": "/static/media/greenicon.df4a2e6a29604cbb6e6d5a9a89daec19.svg",
+    "index.html": "/index.html",
+    "main.df7853a8.css.map": "/static/css/main.df7853a8.css.map",
+    "main.6929b363.js.map": "/static/js/main.6929b363.js.map",
+    "787.1b99915c.chunk.js.map": "/static/js/787.1b99915c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.df7853a8.css",
+    "static/js/main.6929b363.js"
+  ]
+}
