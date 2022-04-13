@@ -26,7 +26,7 @@
 }
 
 button{ /* universal button*/
-    background-color: transparent;
+    overflow: hidden;
     color: var(--whiteSmoke);
     background-color: var(--envira-orange);
     font-size: 1.3rem;
@@ -34,8 +34,36 @@ button{ /* universal button*/
     width: 8rem;
     height: 2.8rem;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: .7rem;
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    box-shadow: 0 0 0 0 rgba(192, 31, 31, 0.5), 0 0 0 0  rgba(0, 117, 20, 0.5);
+}
+button::after{
+    content: '';
+    position: absolute;
+    border-radius: inherit;
+    width: 400px;
+    height: 400px;
+    top: -200px;
+    left: -100px;
+    background-color: deeppink;
+    background-image: linear-gradient(
+     225deg,
+     #2f63f1 0%,
+     #00e97c 50%,
+     #ff5f3b 100%
+     );
+    z-index: -1;
+    transition: transform 0.5s ease;
+}
+button:hover{
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px 1px rgba(7, 0, 0, 0.5), 5px 5px 20px 0  rgba(0, 117, 20, 0.5);
+}
+button:hover::after{
+    transform: rotate(150deg);
 }
 
 /* --- header --- */

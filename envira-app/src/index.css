@@ -58,6 +58,10 @@
         @apply  border-enviraBlue mt-2
     }
 /*Contact us form */
+    .contact-container{
+        @apply flex justify-center items-center flex-col
+        md:flex-row bg-enviraDarkOrange
+    }
     .form-components{
         @apply w-[100%] mb-4
     }
@@ -73,7 +77,17 @@
     }
     button[type="submit"]{
         @apply text-white outline-none border-none
-        bg-enviraGreen rounded-md
+        bg-enviraGreen rounded-md 
+        md:float-right md:mt-5 mb-3 md:mb-0
+    }
+    .contact-right{
+        @apply w-[85%] h-[40%] md:w-[25%] bg-none
+        mt-[0vh] mb-4 md:my-6 md:mr-4
+        flex flex-col justify-center items-center
+    }
+    .contact-info-outline{
+        @apply bg-enviraDarkOrange shadow-lg rounded-lg p-2 text-center
+        flex items-center justify-center
     }
     /* footer box */
     .footer-box{

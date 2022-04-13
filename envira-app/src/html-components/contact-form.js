@@ -7,7 +7,7 @@ export default function ContactForm () {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
     return (
-    <div className="w-[50%]] h-auto mx-10 mt-4 md:ml-10 md:mt-0">
+    <div className="flex flex-col justify-center items-center md:items-end w-[50%]] h-auto mx-10 mt-4 md:ml-0 md:mt-0">
         <div>
             <div className="text-enviraGreen text-4xl font-sfproBold mb-6">Contact Us</div>
             <div className='flex gap-8'>
@@ -33,7 +33,7 @@ export default function ContactForm () {
                 </label>
             </div>
         </div>
-        <button type="submit" className="float-right">SUBMIT</button>
+        <button type="submit">SUBMIT</button>
     </div>
   );
 }
