@@ -17,13 +17,13 @@ export default function ContactForm () {
                     </label>
                 </div>
                 <div className='form-components'>
-                    <label>Email
+                    <label>Company
                         <input type="text" id="email" name="email" value={email} onChange= {(e) => setEmail(e.target.value)}></input>
                     </label>
                 </div>
             </div>
             <div className='form-components'>
-                <label>Company (optional)
+                <label>Email
                     <input type="text" id="company" name="company" value={company} onChange= {(e) => setCompany(e.target.value)}></input>
                 </label>
             </div>

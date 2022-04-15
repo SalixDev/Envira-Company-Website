@@ -8,7 +8,7 @@ const ContactSection = () => {
             <ContactForm/>
             <div className="contact-right">
                     <ContactInfo/>
-                    <img src= {Enter} alt="contact us" className="p-0 w-[100%] h-auto md:ml-8"/>
+                    <img src= {Enter} alt="contact us" className="md:p-0 pt-5 w-[100%] h-auto md:ml-8"/>
             </div>
         </div>
         );

@@ -20,12 +20,12 @@
     .companies-logo{
         @apply 
         flex justify-center content-center
-        w-[300px] h-auto md:h-auto md:w-auto
+        /* md:w-auto w-[100px] h-auto  */
     }
 /* Services section */
     .TDriver{
         @apply   bg-[url(./images/truckDriver.jpeg)]
-        relative h-[380px] md:h-[480px] w-auto
+        relative md:h-[480px] h-[380px] w-auto
         bg-cover
     }
     .Gradient{
@@ -33,20 +33,22 @@
         w-[100vw] h-[100%]
     }
 /* Articles section */
-    .Tesla-img{
+    .first-img{
         @apply   bg-[url(./images/proterra-industry.png)]
     }
-    .CocaCola-img{
+    .second-img{
         @apply   bg-[url(./images/lacroix-industry.png)]
     }
     .ArticleImgSlant{
-        @apply bg-whiteSmoke h-[70px] w-64 mt-[-20px] absolute skew-y-6
+        @apply bg-whiteSmoke h-[70px] w-[16.2rem] mt-[-12px]
+        absolute skew-y-[5deg] left-[-1px]
     }
     .ArticleImg{
-        @apply h-96 bg-cover bg-center
+        @apply h-96 bg-cover bg-center relative z-[0]
     }
     .ArticleTag{
-        @apply text-enviraBlue font-sfproBold text-[13px] mt-[2px]
+        @apply text-enviraBlue font-sfproBold
+        text-[13px] mt-[2px]
     }
     .ArticleHeadline{
         @apply font-sfproBold leading-none text-lg mt-1
@@ -55,12 +57,12 @@
         @apply text-gray-600 text-sm mt-0.5 font-sfproMed
     }
     .BlueButton{
-        @apply  border-enviraBlue mt-2
+        @apply mt-2
     }
 /*Contact us form */
     .contact-container{
-        @apply flex justify-center items-center flex-col
-        md:flex-row bg-enviraDarkOrange
+        @apply flex justify-center items-center 
+        md:flex-row flex-col bg-enviraDarkOrange
     }
     .form-components{
         @apply w-[100%] mb-4
@@ -81,12 +83,13 @@
         md:float-right md:mt-5 mb-3 md:mb-0
     }
     .contact-right{
-        @apply w-[85%] h-[40%] md:w-[25%] bg-none
-        mt-[0vh] mb-4 md:my-6 md:mr-4
+        @apply md:w-[25%] w-[85%] h-[40%] bg-none
+        md:my-6 md:mr-4 mt-[0vh] md:mb-4 mb-8
         flex flex-col justify-center items-center
     }
     .contact-info-outline{
-        @apply bg-enviraDarkOrange shadow-lg rounded-lg p-2 text-center
+        @apply bg-enviraDarkOrange shadow-lg rounded-lg 
+        p-2 text-center
         flex items-center justify-center
     }
     /* footer box */

@@ -2,10 +2,12 @@ import Plant from "../SVGs/hand-plant.svg";
 
 const Articles = () => {
     return (
-        <div className="bg-whiteSmoke h-[700px] flex justify-center gap-10">
-                <img src= {Plant} alt="plant theme" className="p-0 w-[18%] h-auto absolute top-[300vh] left-0"/>            <div className="ml-5">
-                <div className=" mt-10 w-64">
-                    <div className="Tesla-img ArticleImg">
+        <div className="bg-whiteSmoke h-auto flex justify-center gap-10 
+        md:flex-row flex-col md:items-start items-center py-6">
+                {/* <img src= {Plant} alt="plant theme" className="p-0 w-[18%] h-auto absolute top-[300vh] left-0"/> */}
+            <div className="md:ml-5">
+                <div className="w-64">
+                    <div className="first-img ArticleImg">
                         <div className="ArticleImgSlant"></div>
                     </div>
                     <p className="ArticleTag">AUTOMOBILE INDUSTRY</p>
@@ -14,9 +16,9 @@ const Articles = () => {
                     <button className="BlueButton">Read More</button>
                 </div>
             </div>
-            <div className="mr-5 flex items-end">    
-                <div className="mb-10 w-64">
-                    <div className="CocaCola-img ArticleImg ">
+            <div className="md:mr-5 flex items-end">    
+                <div className="md:mt-24 w-64">
+                    <div className="second-img ArticleImg ">
                         <div className="ArticleImgSlant"></div>
                     </div>       
                     <p className="ArticleTag">BEVERAGE</p>

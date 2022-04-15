@@ -1,4 +1,4 @@
-
+import BGWoman from "../SVGs/credit-card.svg"
 const Intro = () => {
     return (
         <div className="hero">
@@ -11,7 +11,9 @@ const Intro = () => {
             </p>
             <button className="button">About Us</button>
           </div>
-          <div className="bac-img1-woman"></div>
+          <div className="bg-img1-woman-container">
+            <img className="bg-img1-woman" src={BGWoman}/>
+          </div>
         </div>
       </div>
         );
