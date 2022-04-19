@@ -239,6 +239,7 @@ button:hover::after{
 
 /* --- body 1; features cards --- */
 .body-1-features{
+
     display: flex;
     align-items: center;
     justify-content: center;

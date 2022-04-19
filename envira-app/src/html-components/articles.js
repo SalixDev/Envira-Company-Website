@@ -1,6 +1,7 @@
-import Plant from "../SVGs/hand-plant.svg";
 
 const Articles = () => {
+
+
     return (
         <div className="bg-whiteSmoke h-auto flex justify-center gap-10 
         md:flex-row flex-col md:items-start items-center py-6">

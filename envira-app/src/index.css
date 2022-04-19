@@ -13,7 +13,8 @@
 
 
 @layer components {
-    /* Company logos */
+
+/* Company logos */
     .container{
         @apply flex justify-center items-center
     }
@@ -92,7 +93,7 @@
         p-2 text-center
         flex items-center justify-center
     }
-    /* footer box */
+/* footer box */
     .footer-box{
         @apply h-[70px] flex justify-center items-center
         bg-black text-whiteSmoke text-lg
