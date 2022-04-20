@@ -31,7 +31,7 @@
     }
     .Gradient{
         @apply bg-black bg-opacity-30 bg-cover
-        w-[100vw] h-[100%]
+        w-[100%] h-[100%]
     }
 /* Articles section */
     .first-img{
