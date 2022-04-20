@@ -1,12 +1,17 @@
+import React, {useEffect} from 'react';
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Articles = () => {
-
+  useEffect (() => {
+    Aos.init({ duration: 800 });
+  }, []);
 
     return (
         <div className="bg-whiteSmoke h-auto flex justify-center gap-10 
         md:flex-row flex-col md:items-start items-center py-6">
                 {/* <img src= {Plant} alt="plant theme" className="p-0 w-[18%] h-auto absolute top-[300vh] left-0"/> */}
-            <div className="md:ml-5">
+            <div className="md:ml-5" data-aos="fade-right" data-aos-once>
                 <div className="w-64">
                     <div className="first-img ArticleImg">
                         <div className="ArticleImgSlant"></div>
@@ -17,7 +22,7 @@ const Articles = () => {
                     <button className="BlueButton">Read More</button>
                 </div>
             </div>
-            <div className="md:mr-5 flex items-end">    
+            <div className="md:mr-5 flex items-end" data-aos="fade-left" data-aos-once>    
                 <div className="md:mt-24 w-64">
                     <div className="second-img ArticleImg ">
                         <div className="ArticleImgSlant"></div>

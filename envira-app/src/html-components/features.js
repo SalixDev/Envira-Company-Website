@@ -1,11 +1,17 @@
 import Truck from "../icons/truck.png";
 import Cash from "../icons/cash.png";
 import Clipboard from "../icons/clipboard.png";
+import React, {useEffect} from 'react';
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Features = () => {
+  useEffect (() => {
+    Aos.init({ duration: 400 });
+  }, []);
     return (
-        <div className="body-1-features">
-        <div className="all-cards-container">
+        <div className="body-1-features" >
+        <div className="all-cards-container" data-aos="fade" data-aos-once>
           <div className="feature-card-container">
             <div className="feature-img-container-align">
               <div className="feature-img-container">

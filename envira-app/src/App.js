@@ -16,7 +16,13 @@ function App() {
     top: contactForm.current.offsetTop, behavior: "smooth"
     });
   };
+  function goToServices () { window.scrollTo({ 
+    top: servicesSection.current.offsetTop, behavior: "smooth"
+    });
+  };
   const contactForm = useRef(null);
+  const servicesSection = useRef(null);
+
 
   return (
     <div>
@@ -33,7 +39,7 @@ function App() {
                   <h3 className="sub-logo">♻ RECYCLING</h3>
                 </div>
                 <div className="header-links">
-                  <p className="header-link1">Services</p>
+                  <p onClick={goToServices} className="header-link1">Services</p>
                   <p className="header-link2">Operations</p>
                   <p className="header-link3">About</p>
                 </div>
@@ -44,6 +50,7 @@ function App() {
       </div>
       <Features/>
       <Companies />
+      <div  ref={servicesSection}/> {/*contact us button reference*/}
       <Services />
       <Articles/>
       <div  ref={contactForm}/> {/*contact us button reference*/}

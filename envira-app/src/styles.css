@@ -136,6 +136,11 @@ button:hover::after{
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+}
+.header-box p:hover{
+    color: #00e97c;
+    transform: translate(-1px, -1px);
 }
 .header-box button{
     height: 38px;
