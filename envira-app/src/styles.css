@@ -142,11 +142,11 @@ button:hover::after{
     color: #00e97c;
     transform: translate(-1px, -1px);
 }
-/* .header-box button{
+.header-box button{
     height: 38px;
     width: 105px;
     font-size: 1rem;
-} */
+}
 
 
 /* --- intro (hero) ---*/
@@ -208,6 +208,9 @@ button:hover::after{
     }
     .header-links{
         display: none;
+    }
+    .header-box button{
+        border-radius: 0;
     }
     .hero-inner{
         flex-direction: column;
