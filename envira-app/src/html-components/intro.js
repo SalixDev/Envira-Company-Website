@@ -25,8 +25,8 @@ const Intro = () => {
             </div>
             
           </div>
-          <div className="bg-img1-woman-container" data-aos="fade-left" data-aos-delay="100">
-            <img className="bg-img1-woman" src={BGWoman}/>
+          <div className="bg-img1-woman-container">
+            <img className="bg-img1-woman" src={BGWoman} data-aos="fade-left" data-aos-delay="100"/>
           </div>
         </div>
       </div>

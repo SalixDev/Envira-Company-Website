@@ -7,11 +7,11 @@ import "aos/dist/aos.css";
 
 const Features = () => {
   useEffect (() => {
-    Aos.init({ duration: 400 });
+    Aos.init({ duration: 700 });
   }, []);
     return (
         <div className="body-1-features" >
-        <div className="all-cards-container" data-aos="fade" data-aos-once>
+        <div className="all-cards-container" data-aos="fade-up">
           <div className="feature-card-container">
             <div className="feature-img-container-align">
               <div className="feature-img-container">

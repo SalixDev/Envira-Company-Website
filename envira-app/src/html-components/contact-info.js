@@ -7,7 +7,7 @@ const ContactInfo = () => {
     Aos.init({ duration: 400});
   }, []);
     return (
-        <div className="bg-enviraOrange my-2 py-3 px-3 w-auto text-whiteSmoke rounded-2xl shadow-xl"
+        <div className="bg-enviraOrange my-2 py-3 px-3 w-auto text-whiteSmoke rounded-2xl"
         data-aos="fade-left" data-aos-once>
             <div className="flex flex-col gap-2 justify-center"> 
                 <p className="contact-info-outline font-sfproBold text-3xl"><svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 mx-1" viewBox="0 0 20 20" fill="currentColor">
