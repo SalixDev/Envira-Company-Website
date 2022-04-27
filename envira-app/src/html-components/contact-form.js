@@ -19,7 +19,7 @@ export default function ContactForm () {
                      from our customer's site ourselves.
                 </div>
                 <div className='text-xl text-white mb-10 font-sfproMed bg-enviraOrange rounded-full p-1 text-center'>
-                     Have our customer representatives go over logistics with you. 
+                Fill out the following form and an Envira representative will respond as soon as possible.
                 </div>
 
                 {/* netlify form */}
