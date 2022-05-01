@@ -6,6 +6,7 @@ import ContactSection from "./html-components/contact-section";
 // import * as React from "react";
 import { useRef } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ContactPage from "./pages/contact-page";
 
 export default function App() {
 
@@ -40,7 +41,7 @@ export default function App() {
             <Routes>
               <Route path="/" element={<Home/>}/>
               <Route path="/operations" element={<Operations/>}/>  
-              <Route path="/C" element={<ContactSection/>}/>             
+              <Route path="/C" element={<ContactPage/>}/>             
             </Routes>
 
         </Router>

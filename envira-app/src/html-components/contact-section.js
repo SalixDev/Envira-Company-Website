@@ -13,7 +13,7 @@ const ContactSection = () => {
     return (
         <div id='contact-us' className="contact-container">
             <ContactForm/>
-            <div className="contact-right lg:overflow-x-visible overflow-x-hidden">
+            <div className="contact-right-container lg:overflow-x-visible overflow-x-hidden">
                 <ContactInfo/>
                 <img src= {Enter} alt="contact us" className="md:p-4 pt-5 w-[100%] h-auto md:ml-8"
                  data-aos="fade-left" data-aos-delay="100" data-aos-once/>

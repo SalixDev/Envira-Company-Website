@@ -65,6 +65,9 @@
         @apply flex justify-center items-center 
         md:flex-row flex-col bg-enviraDarkOrange
     }
+    .contact-left-container{
+        @apply md:ml-4 mt-8
+    }
     .form-components{
         @apply w-[100%] mb-4
     }
@@ -72,7 +75,7 @@
         @apply text-2xl text-white
     }
     input, textarea{
-        @apply bg-gray-50 w-[100%] text-2xl p-2 
+        @apply bg-gray-50 w-[100%] text-xl p-2 
         outline-none border-none rounded-md mt-1 text-black
     }
     textarea{
@@ -83,7 +86,7 @@
         bg-enviraGreen rounded-md 
         md:float-right md:mt-5 mb-3 md:mb-0
     }
-    .contact-right{
+    .contact-right-container{
         @apply md:w-[25%] w-[85%] h-[40%] bg-none
         md:my-6 md:mr-4 mt-[0vh] md:mb-4 mb-8
         flex flex-col justify-center items-center

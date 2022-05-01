@@ -1,4 +1,4 @@
-import React, { useState, useEffect} from 'react';
+import React, { useEffect } from 'react';
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -6,17 +6,20 @@ export default function ContactForm () {
     useEffect (() => {
         Aos.init({ duration: 300});
       }, []);
-    const [name, setName] = useState('');
-    const [subject, setSubject] = useState('');
-    const [email, setEmail] = useState('');
-    const [message, setMessage] = useState('');
     return (
-    <div className="flex flex-col justify-center items-center md:items-end w-[50%]] h-auto mx-10 mt-4 md:ml-0 md:mt-0"
+    <div className="flex flex-col justify-center items-center md:items-end w-[50%]] h-auto mx-10 my-6 md:ml-0 md:mt-0"
     data-aos="fade-right" data-aos-once>
         <form name="contact" method="POST" data-netlify="true" onSubmit="submit">
-            <div>
-                <div className="text-enviraGreen text-4xl font-sfproBold mb-6">
-                    Contact Us
+            <div className='contact-left-container'>
+                <div className="text-enviraGreen text-4xl font-sfproBold mb-1 mt-2 text-center">
+                    Order Our Services
+                </div>
+                <div className='text-lg text-white mb-2 text-center'>
+                    As a fully accredited waste haulier we prefer to collect the materials
+                     from our customer's site ourselves.
+                </div>
+                <div className='text-xl text-white mb-10 font-sfproMed bg-enviraOrange rounded-full p-1 text-center'>
+                     Have one of our customer representatives reach out and go over logistics today. 
                 </div>
 
                 {/* netlify form */}
@@ -25,32 +28,33 @@ export default function ContactForm () {
                 <div className='flex gap-8'>
                     <div className='form-components'>
                         <label>
-                            Name
-                            <input type="text" name="name"></input>
+                            Name*
+                            <input type="text" name="name" placeholder='Enter your name (required)'></input>
                         </label>
                     </div>
                     <div className='form-components'>
                         <label>
-                            Email
-                            <input type="text" name="email"></input>
+                            Email*
+                            <input type="text" name="email" placeholder='Enter your email (required)'></input>
                         </label>
                     </div>
                 </div>
                 <div className='form-components'>
                     <label>
                         Subject
-                        <input type="text" name="subject" ></input>
+                        <input type="text" name="subject" placeholder='Enter subject (optional)' ></input>
                     </label>
                 </div>
                 <div className='form-components'>
                     <label>
                         Message
-                        <textarea name="message"></textarea>
+                        <textarea name="message" placeholder='Enter your message (optional)'></textarea>
                     </label>
                 </div>
 
             </div>
-            <button type="submit" data-aos="fade-up" data-aos-delay="175" data-aos-once>SEND</button>
+            <button type="submit" data-aos="fade-up" data-aos-delay="175" data-aos-once
+            className=''>SEND</button>
         </form>
     </div>
   );
