@@ -17,7 +17,8 @@ const Articles = () => {
                         <div className="ArticleImgSlant"></div>
                     </div>
                     <p className="ArticleTag">AUTOMOBILE INDUSTRY</p>
-                    <h1 className="ArticleHeadline">Envira and Proterra Partnership Divert Over 99 Percent of Factory Waste from Ending Up in Landfills</h1>
+                    <h1 className="ArticleHeadline">Envira and Proterra Partnership Divert Over 99 Percent of
+                            Factory Waste from Ending Up in Landfills</h1>
                     <p className="ArticleAuthor">By Oscar E. Salcedo</p>
                     <button className="BlueButton">Read More</button>
                 </div>
@@ -37,4 +38,4 @@ const Articles = () => {
         );
     };
 
-    export default Articles;
+export default Articles;

@@ -1,22 +1,20 @@
 import "./styles.css";
-import Intro from "./html-components/intro";
-import Features from "./html-components/features";
-import Companies from "./html-components/companies.js";
-import Services from "./html-components/services-CTA";
-import Articles from "./html-components/articles";
+import Home from "./pages/home";
+import Operations from "./pages/operations";
 import ContactSection from "./html-components/contact-section";
-import Footer from "./html-components/footer";
+
+// import * as React from "react";
 import { useRef } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-
-function App() {
+export default function App() {
 
   //Contact us button smooth scroll function
-  function goToContact () { window.scrollTo({ 
+  function goToContact() { window.scrollTo({ 
     top: contactForm.current.offsetTop, behavior: "smooth"
     });
   };
-  function goToServices () { window.scrollTo({ 
+  function goToServices() { window.scrollTo({ 
     top: servicesSection.current.offsetTop, behavior: "smooth"
     });
   };
@@ -26,38 +24,28 @@ function App() {
 
   return (
     <div>
-      <div>
+      
         <link rel="stylesheet" href="./styles.css" />
         <meta charSet="UTF-8" /> 
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>ENVIRA</title>
-            <div className="header">
-              <div className="header-box"> {/* website header */}
-                <div className="logo-container">
-                  <h3 className="logo">ENVIRA</h3>
-                  <h3 className="sub-logo">♻ RECYCLING</h3>
-                </div>
-                <div className="header-links">
-                  <p onClick={goToServices} className="header-link1">Services</p>
-                  <p className="header-link2">Operations</p>
-                  <p className="header-link3">About</p>
-                </div>
-                <button onClick={goToContact}>Contact Us</button>
-              </div>
+
+        <Router>
+            <div>
+              {/* <Link to="/">Home</Link> */}
+              {/* <Link to="/operations">Operations</Link> */}
             </div>
-        <Intro/>
-      </div>
-      <Features/>
-      <Companies />
-      <div  ref={servicesSection}/> {/*contact us button reference*/}
-      <Services />
-      <Articles/>
-      <div  ref={contactForm}/> {/*contact us button reference*/}
-      <ContactSection/>
-      <Footer/>
+
+            <Routes>
+              <Route path="/" element={<Home/>}/>
+              <Route path="/operations" element={<Operations/>}/>  
+              <Route path="/C" element={<ContactSection/>}/>             
+            </Routes>
+
+        </Router>
+
+
     </div>
   );
 }
-
-export default App;

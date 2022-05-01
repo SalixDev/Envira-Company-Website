@@ -20,7 +20,8 @@ const Features = () => {
             </div>
             <div className="feature-text-container-align">
               <p className="feature-title">24 hour turnaround</p>
-              <p className="feature-subtext">We provide a quick turnaround to get your waste dealt with safely in a way that works around you.</p>
+              <p className="feature-subtext">We provide a quick turnaround to get your waste dealt with
+                   safely in a way that works around you.</p>
             </div>
           </div>
           <div className="feature-card-container">
@@ -31,7 +32,8 @@ const Features = () => {
             </div>
             <div className="feature-text-container-align">
               <p className="feature-title">We deal with all types of waste.</p>
-              <p className="feature-subtext">We deal with mix loads of waste, meaning you only need to book one job with us, we'll sort the rest.</p>
+              <p className="feature-subtext">We deal with mix loads of waste, meaning you only need
+                   to book one job with us, we'll sort the rest.</p>
             </div>
           </div>
           <div className="feature-card-container">

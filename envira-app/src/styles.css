@@ -25,7 +25,7 @@
     --whiteSmoke: #f5f5f5;
 }
 
-button{ /* universal button*/
+button, .btn{ /* universal button and .btn for Links*/
     overflow: hidden;
     color: var(--whiteSmoke);
     background-color: var(--envira-orange);
@@ -40,7 +40,7 @@ button{ /* universal button*/
     position: relative;
     box-shadow: 0 0 0 0 rgba(192, 31, 31, 0.5), 0 0 0 0  rgba(0, 117, 20, 0.5);
 }
-button::after{
+button::after, .btn::after{
     content: '';
     position: absolute;
     border-radius: inherit;
@@ -58,21 +58,21 @@ button::after{
     z-index: -1;
     transition: transform 0.5s ease;
 }
-button:hover{
+button:hover, .btn:hover{
     transform: translate(-2px, -2px);
     box-shadow: 5px 3px 8px 1px rgba(7, 0, 0, 0.5), 5px 5px 20px 0  rgba(0, 117, 20, 0.5);
 }
-button:hover::after{
+button:hover::after, .btn:hover::after{
     transform: rotate(150deg);
 }
 
-/* --- header --- */
-.header{
+/* --- navbar --- */
+.navbar{
  background-color: var(--whiteSmoke);
  z-index: 1;
  position: relative;
 }
-.header:after{ /* razor blade div effect */
+.navbar:after{ /* razor blade div effect */
     position: absolute;
     z-index: -1;
     width: 100%;
@@ -86,7 +86,7 @@ button:hover::after{
     transform-origin: bottom left;
     transform: skewY(1.4deg);
 }
-.header-box{
+.navbar-box{
     height:40px;
     display:flex;
     align-items:center;
@@ -121,13 +121,13 @@ button:hover::after{
     align-items: center;
     color: var(--envira-dark-orange);
 }
-.header-links{
+.navbar-links{
     width: 270px;
     display: flex;
     gap: 30px;
     align-items: center;
 }
-.header-box p{ /* header links 1, 2, 3 respectively*/
+.navbar-link{ /* navbar links 1, 2, 3 respectively*/
     font-family: sfpro-bold;
     height:40px;
     flex:1 1 auto;
@@ -138,11 +138,14 @@ button:hover::after{
     justify-content: center;
     cursor: pointer;
 }
-.header-box p:hover{
+.navbar-link:hover{
     color: #00e97c;
     transform: translate(-1px, -1px);
 }
-.header-box button{
+.navbar-box .btn, button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 38px;
     width: 105px;
     font-size: 1rem;
@@ -154,7 +157,9 @@ button:hover::after{
     background-color: var(--whiteSmoke);
 }
 .hero-inner{
-    background-image: linear-gradient(-4deg, rgb(243, 243, 243, .8) -40%, rgba(83, 83, 83, 0.95) 60%); 
+    background-image: linear-gradient(
+            -4deg, rgb(243, 243, 243, .8) -40%,
+             rgba(83, 83, 83, 0.95) 60%); 
     background-color:rgb(104, 103, 103);
     display: flex;
     justify-content: center;
@@ -205,13 +210,13 @@ button:hover::after{
     width: 100%
 }
 @media only screen and (max-width:768px){
-    .header-box{
+    .navbar-box{
         height: 60px;
     }
-    .header-links{
+    .navbar-links{
         display: none;
     }
-    .header-box button{
+    .navbar-box button{
         border-radius: 0;
     }
     .hero-inner{
@@ -234,7 +239,12 @@ button:hover::after{
         margin-top: 0%;
         margin-bottom: 1rem;
     }
-    .bg-img1-woman-container{
+    .bottom-slogan-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+        .bg-img1-woman-container{
         margin: 0 0 0 0;
         padding: 0 2vw 0 2vw;
     }

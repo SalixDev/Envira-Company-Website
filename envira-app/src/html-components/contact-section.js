@@ -1,7 +1,7 @@
 import ContactForm from "./contact-form";
 import ContactInfo from "./contact-info";
 import Enter from "../SVGs/enter.svg";
-import React, {useEffect} from 'react';
+import React, {useEffect, Route, Routes, Router} from 'react';
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -11,7 +11,7 @@ const ContactSection = () => {
   }, []);
 
     return (
-        <div id='intro' className="contact-container">
+        <div id='contact-us' className="contact-container">
             <ContactForm/>
             <div className="contact-right lg:overflow-x-visible overflow-x-hidden">
                 <ContactInfo/>

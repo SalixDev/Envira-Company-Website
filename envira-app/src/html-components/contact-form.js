@@ -15,30 +15,41 @@ export default function ContactForm () {
     data-aos="fade-right" data-aos-once>
         <div>
             <div className="text-enviraGreen text-4xl font-sfproBold mb-6">Contact Us</div>
-            <div className='flex gap-8'>
+            {/* netlify form */}
+            <form 
+                name="contact" method="POST" data-netlify="true" onSubmit="submit"
+            >
+                <div className='flex gap-8'>
+                    <div className='form-components'>
+                        <label>Name
+                            <input type="text" id="name" name="name" value={name} onChange= {(e) =>
+                                    setName(e.target.value)}></input>
+                        </label>
+                    </div>
+                    <div className='form-components'>
+                        <label>Email
+                            <input type="text" id="email" name="email" value={email} onChange= {(e) =>
+                                    setEmail(e.target.value)}></input>
+                        </label>
+                    </div>
+                </div>
                 <div className='form-components'>
-                    <label>Name
-                        <input type="text" id="name" name="" value={name} onChange= {(e) => setName(e.target.value)}></input>
+                    <label>Subject
+                        <input type="text" id="subject" name="subject" value={subject} onChange= {(e) =>
+                                setSubject(e.target.value)}></input>
                     </label>
                 </div>
                 <div className='form-components'>
-                    <label>Email
-                        <input type="text" id="email" name="email" value={email} onChange= {(e) => setEmail(e.target.value)}></input>
+                    <label>Message
+                        <textarea type="text" id="message" name="message" value={message} onChange= {(e) =>
+                                setMessage(e.target.value)}></textarea>
                     </label>
                 </div>
-            </div>
-            <div className='form-components'>
-                <label>Subject
-                    <input type="text" id="subject" name="subject" value={subject} onChange= {(e) => setSubject(e.target.value)}></input>
-                </label>
-            </div>
-            <div className='form-components'>
-                <label>Message
-                    <textarea type="text" id="message" name="message" value={message} onChange= {(e) => setMessage(e.target.value)}></textarea>
-                </label>
-            </div>
+            </form>
+
         </div>
-        <button type="submit" data-aos="fade-up" data-aos-delay="200" data-aos-once>SEND</button>
+        <button type="submit" data-aos="fade-up" data-aos-delay="175" data-aos-once>SEND</button>
+
     </div>
   );
 }

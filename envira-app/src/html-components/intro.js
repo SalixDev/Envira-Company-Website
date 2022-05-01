@@ -16,7 +16,7 @@ const Intro = () => {
           <div className="intro-text-container" data-aos="fade-right">
             <h1 className="slogan">Feel the Envira</h1>
             <h1 className="sub-slogan">Advantage.</h1>
-            <div  data-aos="fade-right" data-aos-delay="200">
+            <div  data-aos="fade-right" data-aos-delay="200" className="bottom-slogan-container">
 
             <p className="sub-text">
             A family owned company working with businesses to achieve waste reduction and increased recycling while saving you money.
