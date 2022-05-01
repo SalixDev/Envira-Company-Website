@@ -92,12 +92,12 @@ button:hover::after, .btn:hover::after{
     align-items:center;
     justify-content: space-between;
     margin: 0vw 6vw;
-    padding-top: 2vw;
+    padding-top: 1.6rem;
     padding-bottom:2vw;
     gap: 3vw;
 }
 .logo-container{
-    padding-top: 15px;
+    padding-top: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -110,8 +110,12 @@ button:hover::after, .btn:hover::after{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--envira-dark-orange); 
-    line-height: 6px;
+    /* color: var(--envira-dark-orange);  */
+    /* line-height: 6px; */
+    background: -webkit-linear-gradient(100deg,#993716, #ff4000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 32px;
 }
 .sub-logo{
     font-family: sfpro-bold;
@@ -120,6 +124,7 @@ button:hover::after, .btn:hover::after{
     justify-content: center;
     align-items: center;
     color: var(--envira-dark-orange);
+    position: absolute;
 }
 .navbar-links{
     width: 270px;
