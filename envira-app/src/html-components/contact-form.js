@@ -13,43 +13,45 @@ export default function ContactForm () {
     return (
     <div className="flex flex-col justify-center items-center md:items-end w-[50%]] h-auto mx-10 mt-4 md:ml-0 md:mt-0"
     data-aos="fade-right" data-aos-once>
-        <div>
-            <div className="text-enviraGreen text-4xl font-sfproBold mb-6">Contact Us</div>
-            {/* netlify form */}
-            <form 
-                name="contact" method="POST" data-netlify="true" onSubmit="submit"
-            >
+        <form name="contact" method="POST" data-netlify="true" onSubmit="submit">
+            <div>
+                <div className="text-enviraGreen text-4xl font-sfproBold mb-6">
+                    Contact Us
+                </div>
+
+                {/* netlify form */}
+                <input type="hidden" name="form-name" value="contact"/>
+
                 <div className='flex gap-8'>
                     <div className='form-components'>
-                        <label>Name
-                            <input type="text" id="name" name="name" value={name} onChange= {(e) =>
-                                    setName(e.target.value)}></input>
+                        <label>
+                            Name
+                            <input type="text" name="name"></input>
                         </label>
                     </div>
                     <div className='form-components'>
-                        <label>Email
-                            <input type="text" id="email" name="email" value={email} onChange= {(e) =>
-                                    setEmail(e.target.value)}></input>
+                        <label>
+                            Email
+                            <input type="text" name="email"></input>
                         </label>
                     </div>
                 </div>
                 <div className='form-components'>
-                    <label>Subject
-                        <input type="text" id="subject" name="subject" value={subject} onChange= {(e) =>
-                                setSubject(e.target.value)}></input>
+                    <label>
+                        Subject
+                        <input type="text" name="subject" ></input>
                     </label>
                 </div>
                 <div className='form-components'>
-                    <label>Message
-                        <textarea type="text" id="message" name="message" value={message} onChange= {(e) =>
-                                setMessage(e.target.value)}></textarea>
+                    <label>
+                        Message
+                        <textarea name="message"></textarea>
                     </label>
                 </div>
-            </form>
 
-        </div>
-        <button type="submit" data-aos="fade-up" data-aos-delay="175" data-aos-once>SEND</button>
-
+            </div>
+            <button type="submit" data-aos="fade-up" data-aos-delay="175" data-aos-once>SEND</button>
+        </form>
     </div>
   );
 }

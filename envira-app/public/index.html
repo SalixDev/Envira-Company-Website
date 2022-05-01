@@ -27,6 +27,14 @@
     <title>Envira Recycling</title>
   </head>
   <body>
+    <form name="contact" netlify netlify-honeypot="bot-field" action="/" hidden>
+        <input type="hidden" name="form-name" value="contact"/>
+        <input type="text" name="name"></input>
+        <input type="text" name="email"></input>
+        <input type="text" name="subject" ></input>
+        <textarea name="message"></textarea>
+      <button type="submit">SEND</button>
+    </form>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
