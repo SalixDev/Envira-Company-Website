@@ -116,9 +116,10 @@ button:hover::after, .btn:hover::after{
     align-items: center;
     /* color: var(--envira-dark-orange);  */
     /* line-height: 6px; */
-    background: -webkit-linear-gradient(100deg,#993716, #ff4000);
+    /* background: -webkit-linear-gradient(100deg,#993716, #ff4000);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; */
+    color: var(--envira-dark-orange);
     margin-bottom: 32px;
 }
 .sub-logo{
