@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <div className="footer-box">
           <img src={GreenIcon} alt="envira icon"/>
-        <p className="copyright"> Copyright © Kiwimoto 2022</p>
+        <p className="copyright"> © 2014 - 2022 ENVIRA Recycle | All Rights Reserved</p>
       </div>
     );
 };

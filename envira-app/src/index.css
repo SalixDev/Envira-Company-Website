@@ -63,7 +63,7 @@
 /*Contact us form */
     .contact-container{
         @apply flex justify-center items-center 
-        md:flex-row flex-col bg-enviraDarkOrange
+        lg:flex-row flex-col bg-enviraDarkOrange
     }
     .contact-left-container{
         @apply md:ml-4 mt-8
@@ -87,7 +87,7 @@
         md:float-right md:mt-5 mb-3 md:mb-0
     }
     .contact-right-container{
-        @apply md:w-[25%] w-[85%] h-[40%] bg-none
+        @apply lg:w-[25%] w-[85%] h-[40%] bg-none
         md:my-6 md:mr-4 mt-[0vh] md:mb-4 mb-8
         flex flex-col justify-center items-center
     }
@@ -98,11 +98,11 @@
     }
 /* footer box */
     .footer-box{
-        @apply h-[70px] flex justify-center items-center
-        bg-black text-whiteSmoke text-lg
+        @apply h-[50px] flex justify-end items-center
+        bg-black text-gray-500 text-lg pr-14
     }
     .footer-box img{
-        @apply h-9 w-9 m-1
+        @apply h-6 w-6 m-1
     }
 }
 

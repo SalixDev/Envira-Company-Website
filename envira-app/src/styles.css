@@ -26,6 +26,9 @@
 }
 
 button, .btn{ /* universal button and .btn for Links*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
     color: var(--whiteSmoke);
     background-color: var(--envira-orange);
@@ -92,13 +95,13 @@ button:hover::after, .btn:hover::after{
     display:flex;
     align-items:center;
     justify-content: space-between;
-    margin: 0vw 6vw;
-    padding-top: 1.6rem;
-    padding-bottom:2vw;
+    margin: 0vw 4vw;
+    padding-top: 2rem;
+    padding-bottom:1rem;
     gap: 3vw;
 }
 .logo-container{
-    padding-top: 1rem;
+    padding-top: .5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -127,13 +130,13 @@ button:hover::after, .btn:hover::after{
     color: var(--envira-dark-orange);
     position: absolute;
 }
-.navbar-links{
+/* .navbar-links{
     width: 270px;
     display: flex;
     gap: 30px;
     align-items: center;
-}
-.navbar-link{ /* navbar links 1, 2, 3 respectively*/
+} 
+.navbar-link{ 
     font-family: sfpro-bold;
     height:40px;
     flex:1 1 auto;
@@ -147,16 +150,7 @@ button:hover::after, .btn:hover::after{
 .navbar-link:hover{
     color: #00e97c;
     transform: translate(-1px, -1px);
-}
-.navbar-box .btn, button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 38px;
-    width: 105px;
-    font-size: 1rem;
-}
-
+} */
 
 /* --- intro (hero) ---*/
 .hero{
@@ -222,7 +216,7 @@ button:hover::after, .btn:hover::after{
     .navbar-links{
         display: none;
     }
-    .navbar-box .btn{
+    .btn{
         border-radius: 0
     }
     .hero-inner{

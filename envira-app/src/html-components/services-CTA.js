@@ -21,7 +21,7 @@ const Services = () => {
                                a detailed recycling proposal will be produced for your site. This will outline landfill
                                reduction and gaining the most from your companies' valuable commodities.
                         </div>
-                        <button>Services</button>
+                        {/* <button>Services</button> */}
                     </div>
                 </div>
           </div>

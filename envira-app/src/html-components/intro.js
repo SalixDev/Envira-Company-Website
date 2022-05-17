@@ -1,5 +1,7 @@
 import BGWoman from "../SVGs/credit-card.svg"
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
+import { Link } from "react-router-dom";
+
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -21,7 +23,7 @@ const Intro = () => {
             <p className="sub-text">
             A family owned company working with businesses to achieve waste reduction and increased recycling while saving you money.
             </p>
-            <button className="button" >About Us</button>
+            <Link to="/C" className="btn text-sm">Call Today</Link>
             </div>
             
           </div>
