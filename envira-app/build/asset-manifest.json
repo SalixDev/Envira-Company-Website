@@ -1,8 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d41b7610.css",
-    "main.js": "/static/js/main.4fde4ad7.js",
-    "static/js/787.1b99915c.chunk.js": "/static/js/787.1b99915c.chunk.js",
+    "main.css": "/static/css/main.5a9117ba.css",
+    "main.js": "/static/js/main.614cf8ce.js",
     "static/media/proterra-industry.png": "/static/media/proterra-industry.345846024275641df622.png",
     "static/media/truckDriver.jpeg": "/static/media/truckDriver.4650589177619254e774.jpeg",
     "static/media/SFPRODISPLAYMEDIUM.OTF": "/static/media/SFPRODISPLAYMEDIUM.b85d841dacb040b84951.OTF",
@@ -13,17 +12,15 @@
     "static/media/Stormcloud.png": "/static/media/Stormcloud.e608af049837ff35a69d.png",
     "static/media/Lacroix.png": "/static/media/Lacroix.413dca7d9106e2f4e155.png",
     "static/media/Humbolt.png": "/static/media/Humbolt.a8aaede5c080b75002fe.png",
-    "static/media/hand-plant.svg": "/static/media/hand-plant.7a09cb7f2a78e4b51197977707ae4e51.svg",
     "static/media/credit-card.svg": "/static/media/credit-card.7daa6c13ab769e3014f08e3bb1923b06.svg",
     "static/media/enter.svg": "/static/media/enter.077ccd6d0f69afdd56a22788568729a6.svg",
     "static/media/greenicon.svg": "/static/media/greenicon.df4a2e6a29604cbb6e6d5a9a89daec19.svg",
     "index.html": "/index.html",
-    "main.d41b7610.css.map": "/static/css/main.d41b7610.css.map",
-    "main.4fde4ad7.js.map": "/static/js/main.4fde4ad7.js.map",
-    "787.1b99915c.chunk.js.map": "/static/js/787.1b99915c.chunk.js.map"
+    "main.5a9117ba.css.map": "/static/css/main.5a9117ba.css.map",
+    "main.614cf8ce.js.map": "/static/js/main.614cf8ce.js.map"
   },
   "entrypoints": [
-    "static/css/main.d41b7610.css",
-    "static/js/main.4fde4ad7.js"
+    "static/css/main.5a9117ba.css",
+    "static/js/main.614cf8ce.js"
   ]
 }

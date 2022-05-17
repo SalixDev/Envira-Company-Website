@@ -20,7 +20,7 @@ const Articles = () => {
                     <h1 className="ArticleHeadline">Envira and Proterra Partnership Divert Over 99 Percent of
                             Factory Waste from Ending Up in Landfills</h1>
                     <p className="ArticleAuthor">By Oscar E. Salcedo</p>
-                    <button className="BlueButton">Read More</button>
+                    {/* <button className="BlueButton">Read More</button> */}
                 </div>
             </div>
             <div className="md:mr-5 flex items-end lg:overflow-x-visible overflow-x-hidden">
@@ -31,7 +31,7 @@ const Articles = () => {
                     <p className="ArticleTag">BEVERAGE</p>
                     <h1 className="ArticleHeadline">Recycling Glass and Metal Waste in the Beverage Industry</h1>
                     <p className="ArticleAuthor">By Hannah Sampson</p>
-                    <button className="BlueButton">Read More</button>
+                    {/* <button className="BlueButton">Read More</button> */}
                 </div>
             </div>
         </div>

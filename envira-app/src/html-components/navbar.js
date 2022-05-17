@@ -9,8 +9,6 @@ const Navbar = () => {
                     <Link to="/" className="sub-logo">♻ RECYCLING</Link>
                 </div>
                 <div className="navbar-links">
-                    <Link to="/" className="navbar-link">Services</Link>
-                    <Link to="/operations" className="navbar-link">Operations</Link>
                     {/* <p onClick={goToServices} className="navbar-link1">Services</p> */}
                 </div>
                 <Link 

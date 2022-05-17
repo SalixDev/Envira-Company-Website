@@ -61,6 +61,7 @@ button::after, .btn::after{
 button:hover, .btn:hover{
     transform: translate(-2px, -2px);
     box-shadow: 5px 3px 8px 1px rgba(7, 0, 0, 0.5), 5px 5px 20px 0  rgba(0, 117, 20, 0.5);
+    scale: 1.06 /* testing property */
 }
 button:hover::after, .btn:hover::after{
     transform: rotate(150deg);
@@ -221,8 +222,8 @@ button:hover::after, .btn:hover::after{
     .navbar-links{
         display: none;
     }
-    .navbar-box button{
-        border-radius: 0;
+    .navbar-box .btn{
+        border-radius: 0
     }
     .hero-inner{
         flex-direction: column;

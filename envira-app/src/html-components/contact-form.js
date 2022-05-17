@@ -11,15 +11,15 @@ export default function ContactForm () {
     data-aos="fade-right" data-aos-once>
         <form name="contact" method="POST" data-netlify="true" onSubmit="submit">
             <div className='contact-left-container'>
-                <div className="text-enviraGreen text-4xl font-sfproBold mb-1 mt-2 text-center">
-                    Order Our Services
+                <div className="text-enviraGreen text-5xl font-sfproBold mb-1 mt-2 text-center">
+                    Envira Pays You To Recycle
                 </div>
                 <div className='text-lg text-white mb-2 text-center'>
                     As a fully accredited waste haulier we prefer to collect the materials
                      from our customer's site ourselves.
                 </div>
                 <div className='text-xl text-white mb-10 font-sfproMed bg-enviraOrange rounded-full p-1 text-center'>
-                     Have one of our customer representatives reach out and go over logistics today. 
+                     Have our customer representatives go over logistics with you. 
                 </div>
 
                 {/* netlify form */}
